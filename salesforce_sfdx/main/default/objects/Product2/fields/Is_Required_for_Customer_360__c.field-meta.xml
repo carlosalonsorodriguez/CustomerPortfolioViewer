@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Required_for_Customer_360__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To indicate that the instantiated inventory item linked to the product requires to be as part of the Customer 360 View</description>
+    <externalId>false</externalId>
+    <label>Is Required for Customer 360?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

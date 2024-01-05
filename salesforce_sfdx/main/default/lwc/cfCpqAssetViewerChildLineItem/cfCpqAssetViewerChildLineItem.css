@@ -1,0 +1,264 @@
+.cpq__asset-name {
+    font-family: Salesforce Sans;
+    font-size: 15px;
+    line-height: 20px;
+    color: #0070D2;
+    width: auto;
+    max-width: 75%;
+}
+
+.cpq__asset-version {
+    padding: 1px 0 0 5px;
+}
+
+/* .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 2%;
+    text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 3%;
+     text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 4%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 5%;
+    text-indent: 0 !important;
+}
+.hierarchy-item{
+    padding-right: 0;
+    padding-left: 0;
+}
+@media screen and (max-width: 48rem){
+    .hierarchy-name{
+        padding-left:0;
+        width: 85%;
+        padding-bottom:5%;
+    }
+    .hierarchy-item{
+        padding-right: 0;
+        padding-left: 5%;
+    }
+    .hierarchy-recurring-charge{
+        width:50%;
+    }
+    .hierarchy-onetime-charge{
+         width:50%;
+    }
+    .hierarchy-menu{
+        position: absolute;
+        width: 90%;
+        text-align: end;
+    }
+    .hierarchy-quantity{
+        width: 53%;
+    }
+    .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 6%;
+     text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 6%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 6%;
+    text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+} */
+/* .cpq__cart-item-bottom_border {
+   padding:0;
+}
+.cpq__cart-line-item_promo{
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.hierarchy-usage-charge{
+    border-left:1px solid #cccccc;
+}
+.hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 2%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .cpq__cart-item-bottom_border {
+    margin-left: 1%!important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 3%;
+     text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .cpq__cart-item-bottom_border {
+    margin-left: 2%!important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 4%;
+    text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .cpq__cart-item-bottom_border {
+   margin-left: 3%!important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 5%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .cpq__cart-item-bottom_border {
+    margin-left: 4%!important;
+}
+.hierarchy-item{
+    padding-right: 0;
+    padding-left: 0;
+}
+.hierarchy-quantity .slds-form-element__label{
+    margin-right:0;
+    padding-right:0;
+}
+.hierarchy-quantity .slds-form-element__control-animated-label{
+    width:80%;
+} */
+/* @media screen and (max-width: 48rem){ */
+    /* .hierarchy-name{
+        padding-left:0;
+        width: 85%;
+        padding-bottom:5%;
+    }
+    .hierarchy-quantity .slds-form-element__control-animated-label{
+        width:50%;
+    }
+    .hierarchy-item{
+        padding-right: 0;
+        padding-left: 5%;
+    }
+    .hierarchy-recurring-charge{
+        width:30%;
+    }
+    .hierarchy-onetime-charge{
+         width:30%;
+    }
+    .hierarchy-usage-charge{
+        width: 30%;
+        border-left: 0;
+    }
+    .hierarchy-menu{
+        position: absolute;
+        width: 90%;
+        text-align: end;
+    }
+    .hierarchy-quantity{
+        width: 100%;
+    } */
+    /* .hierarchy-state .hierarchy-state .cpq__cart-item-bottom_border {
+    margin-left: 3%!important;
+    } */
+    
+    /* .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 3%;
+    text-indent: 0 !important;
+} */
+/* .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 3%;
+    text-indent: 0 !important;
+} */
+.hierarchy-name {
+    padding-left: 3%;
+     text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-name {
+    padding-left: 6%;
+     text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 12%;
+     text-indent: 0 !important;
+}
+/* .hierarchy-state .hierarchy-state .hierarchy-state .cpq__cart-item-bottom_border {
+    margin-left: 6%!important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 6%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 6%;
+    text-indent: 0 !important;
+} */
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 16%;
+    text-indent: 0 !important;
+}
+/* .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .cpq__cart-item-bottom_border {
+    margin-left: 9%!important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 9%;
+    text-indent: 0 !important;
+} */
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 20%;
+    text-indent: 0 !important;
+}
+/* .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .cpq__cart-item-bottom_border {
+    margin-left: 12%!important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 12%;
+    text-indent: 0 !important;
+} */

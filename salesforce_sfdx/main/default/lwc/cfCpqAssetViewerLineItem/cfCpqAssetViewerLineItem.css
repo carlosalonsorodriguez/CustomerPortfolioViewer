@@ -1,0 +1,277 @@
+/* .hierarchy-state .hierarchy-name {
+    
+} */
+.cpq__parent-recurring_charge label, .cpq__parent-onetime_charge label, .cpq__parent-usage_charge label{
+    padding-right:0;
+    margin-right:0
+}
+.cpq__parent-hierarchy_quantity .slds-form-element__label{
+    margin-right:0;
+    padding-right:0;
+}
+.cpq__parent-hierarchy_quantity .slds-form-element__control-animated-label{
+    width:55%;
+}
+/* .parent-onetime-charge label{
+    padding-right:0;
+    margin-right:0
+} */
+.hierarchy-recurring-charge label{
+    padding-right:0;
+    margin-right:0
+}
+.hierarchy-onetime-charge label{
+    padding-right:0;
+    margin-right:0
+}
+.hierarchy-usage-charge label{
+    padding-right:0;
+    margin-right:0
+}
+.hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 2%;
+    text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 3%;
+     text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 4%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 5%;
+    text-indent: 0 !important;
+}
+.hierarchy-item{
+    padding-right: 0;
+    padding-left: 0;
+}
+.cpq__parent-recurring_charge label, .cpq__parent-onetime_charge label, .cpq__parent-usage_charge label{
+    padding-right:0 !important;
+    margin-right:0 !important;
+}
+
+.cpq__asset-name {
+    font-family: Salesforce Sans;
+    font-size: 15px;
+    line-height: 20px;
+    color: #0070D2;
+    width: auto;
+    max-width: 75%;
+}
+
+.cpq__asset-version {
+    padding: 2px 0 0 5px;
+}
+
+@media screen and (max-width: 48rem){
+    .hierarchy-name, .cpq__parent-hierarchy_name{
+        padding-left:0;
+        width: 85%;
+        padding-bottom:5%;
+    }
+    .cpq__parent-hierarchy_name{
+        padding-left:1%;
+    }
+    .cpq__parent-hierarchy_quantity{
+        width: 75%;
+         padding-left: 8%;
+    }
+    .cpq__parent-usage_charge{
+        border-left:0 !important;
+    }
+    .hierarchy-item{
+        padding-right: 0;
+        padding-left: 5%;
+    }
+    .hierarchy-recurring-charge, .hierarchy-onetime-charge{
+        width:50%;
+        text-align:left;
+    }
+    .cpq__parent-usage_charge{
+        padding-left:8%;
+        width: 30%;
+        text-align: left;
+    }
+    .cpq__parent-onetime_charge, .cpq__parent-recurring_charge{
+        width: 30%;
+        text-align: left;
+    }
+    /* .hierarchy-onetime-charge{
+         width:50%;
+         text-align:left;
+    } */
+    .hierarchy-recurring-charge span{
+         font-weight: bold;
+    }
+    .hierarchy-onetime-charge span{
+         font-weight: bold;
+    }
+    .hierarchy-menu, .cpq__parent-hierarchy_menu{
+        position: absolute;
+        width: 95%;
+        text-align: end;
+    }
+    .hierarchy-quantity{
+        width: 53%;
+    }
+    .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 6%;
+     text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 6%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 6%;
+    text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+}
+/* .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    text-indent: 4%;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    text-indent: 6%;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    text-indent: 8%; 
+}*/
+/* .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 2%;
+    text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 3%;
+     text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 6%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 8%;
+    text-indent: 0 !important;
+}
+.hierarchy-item{
+    padding-right: 0;
+    padding-left: 0;
+}
+@media screen and (max-width: 48rem){
+    .hierarchy-name{
+        padding-left:0;
+        width: 85%;
+        padding-bottom:5%;
+    }
+    .hierarchy-item{
+        padding-right: 0;
+        padding-left: 5%;
+    }
+    .hierarchy-recurring-charge{
+        width:50%;
+    }
+    .hierarchy-onetime-charge{
+         width:50%;
+    }
+    .hierarchy-menu{
+        position: absolute;
+        width: 90%;
+        text-align: end;
+    }
+    .hierarchy-quantity{
+        width: 53%;
+    }
+    .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 3%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 6%;
+     text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 6%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 6%;
+    text-indent: 0 !important;
+}
+
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 9%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-name {
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-quantity{
+    padding-left: 12%;
+    text-indent: 0 !important;
+}
+.hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-state .hierarchy-onetime-charge{
+    padding-left: 12%;
+    text-indent: 0 !important;
+} 
+}*/

@@ -1,0 +1,3 @@
+let styleDefinition =
+      {"state0element1":[{"conditions":"default","styleObject":{"class":"slds-col  condition-element cpq__cart-line-item_promo  slds-size_12-of-12  ","style":"     : #ccc 1px solid; \n         ","styleProperties":{}}}],"state0element1block_element0":[{"conditions":"default","styleObject":{"class":"slds-col  condition-element  slds-size_12-of-12  ","style":"background-color:#ECEBEA;     : #ccc 1px solid; \n         ","styleProperties":{}}}]};
+  export default styleDefinition

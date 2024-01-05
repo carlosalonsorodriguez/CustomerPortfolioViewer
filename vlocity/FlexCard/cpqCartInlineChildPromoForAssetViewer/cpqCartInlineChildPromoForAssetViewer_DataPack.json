@@ -1,0 +1,33 @@
+{
+    "AuthorName": "Vlocity",
+    "ClonedFromOmniUiCardKey": "cpqCartInlineChildPromoBulkSearch/Vlocity/1/1620621559966",
+    "DataSourceConfig": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "[\n          {\n            \"Name\": \"new test promo\",\n            \"Id\": \"a3T5g000000PKWUEA4\",\n            \"displaySequence\": -1,\n            \"actions\": {\n              \"getpromodetails\": {\n                \"client\": {\n                  \"params\": {}\n                },\n                \"remote\": {\n                  \"params\": {\n                    \"cartId\": \"0015g00000EyHr5AAF\",\n                    \"id\": \"a3T5g000000PKWUEA4\",\n                    \"accountId\": \"0015g00000EyHr5AAF\",\n                    \"methodName\": \"getAppliedPromotionsByAccount\"\n                  }\n                },\n                \"rest\": {\n                  \"link\": null,\n                  \"method\": null,\n                  \"params\": {}\n                }\n              }\n            }\n          }\n        ]",
+            "dsDelay": "",
+            "resultVar": ""
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "cpqCartInlineChildPromoForAssetViewer",
+    "Namespace": "",
+    "OmniUiCardKey": "cpqCartInlineChildPromoForAssetViewer/Vlocity/1/1621245527432",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "cpqCartInlineChildPromoForAssetViewer.json",
+    "SampleDataSourceResponse": "[{\"Name\":\"new test promo\",\"Id\":\"a3T5g000000PKWUEA4\",\"displaySequence\":-1,\"actions\":{\"getpromodetails\":{\"client\":{\"params\":{}},\"remote\":{\"params\":{\"cartId\":\"0015g00000EyHr5AAF\",\"id\":\"a3T5g000000PKWUEA4\",\"accountId\":\"0015g00000EyHr5AAF\",\"methodName\":\"getAppliedPromotionsByAccount\"}},\"rest\":{\"link\":null,\"method\":null,\"params\":{}}}}}]",
+    "StylingConfiguration": "{\"customStyles\":\"/* .cpq__cart-line-item_promo{\\n     background-color: rgb(216, 237, 255);\\n    border-width: 1px;\\n    border-style: solid;\\n    border-color: rgb(94, 180, 255);\\n} */\\n\\n.cpq__cart-item-border_container{\\n    height:0;\\n    flex: 1 1 auto;\\n}\\n.cpq__cart-line-item-promo_name{\\n    padding-left:1%;\\n    flex: 1 1 auto;\\n}\\n.cpq__cart-item-bottom_border{\\n    padding-left:0;\\n}\"}",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/cpqCartInlineChildPromoForAssetViewer"
+}

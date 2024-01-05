@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "CPQ_GetAssetAndIventoryViewerLineItems_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Asset And Inventory Viewer Line Items",
+    "OmniProcessElement": [
+        "CPQ_GetAssetAndIventoryViewerLineItems_Element_getAllAssetsAPI.json",
+        "CPQ_GetAssetAndIventoryViewerLineItems_Element_transformData.json",
+        "CPQ_GetAssetAndIventoryViewerLineItems_Element_RootAssetLoop.json",
+        "CPQ_GetAssetAndIventoryViewerLineItems_Element_DRE_GetAllAssetInventoryItems.json",
+        "CPQ_GetAssetAndIventoryViewerLineItems_Element_RemAct_InventoryItemsViewer.json",
+        "CPQ_GetAssetAndIventoryViewerLineItems_Element_ResponseAct_AssetsAndInventory.json"
+    ],
+    "OmniProcessKey": "CPQ_GetAssetAndIventoryViewerLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetAssetAndIventoryViewerLineItems_PropertySetConfig.json",
+    "ResponseCacheType": "Session Cache",
+    "SubType": "GetAssetAndIventoryViewerLineItems",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetAssetAndIventoryViewerLineItems/Procedure",
+    "WebComponentKey": "312215db-7d58-74b1-45ea-c1a62aac18da"
+}

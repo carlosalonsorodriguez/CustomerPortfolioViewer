@@ -1,0 +1,51 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <vlocity_cmt-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </vlocity_cmt-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <vlocity_cmt-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_cmt-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col   slds-size_12-of-12  " data-rindex={rindex} style="      
+         font-size:8pt" ><vlocity_cmt-flex-datatable data-style-id="state0element0_child"   record={record}  card={card}  cell-level-edit="true"  columns='\[{"editable":"false","fieldName":"label","label":"Attribute Name","searchable":false,"sortable":true,"type":"text"},{"editable":"false","fieldName":"userValue","label":"Value","searchable":false,"sortable":true,"type":"text"},{"editable":"false","fieldName":"code","label":"Code","searchable":false,"sortable":true,"type":"text"},{"editable":"false","fieldName":"categoryName","label":"Category","searchable":"false","sortable":true,"type":"text"}]'  group-order="asc"  issearchavailable="false"  issortavailable="true"  pagelimit="3"  records={records}  styles='\{"cellMargin":[],"cellPadding":[],"headFontWeight":"bold"}'  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+                <template if:false={hasRecords}>
+                      <vlocity_cmt-flex-card-state   data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col   slds-size_12-of-12  " data-rindex={rindex} style="      
+         font-size:8pt" ><vlocity_cmt-flex-datatable data-style-id="state0element0_child"   record={record}  card={card}  cell-level-edit="true"  columns='\[{"editable":"false","fieldName":"label","label":"Attribute Name","searchable":false,"sortable":true,"type":"text"},{"editable":"false","fieldName":"userValue","label":"Value","searchable":false,"sortable":true,"type":"text"},{"editable":"false","fieldName":"code","label":"Code","searchable":false,"sortable":true,"type":"text"},{"editable":"false","fieldName":"categoryName","label":"Category","searchable":"false","sortable":true,"type":"text"}]'  group-order="asc"  issearchavailable="false"  issortavailable="true"  pagelimit="3"  records={records}  styles='\{"cellMargin":[],"cellPadding":[],"headFontWeight":"bold"}'  theme="slds"  ></vlocity_cmt-flex-datatable>
+      </div>
+        </div>
+      </vlocity_cmt-flex-card-state>
+                </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_cmt-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </vlocity_cmt-action>
+  
+            <vlocity_cmt-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </vlocity_cmt-action>
+            </div>
+          </template>

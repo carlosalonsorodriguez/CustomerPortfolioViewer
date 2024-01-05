@@ -1,0 +1,468 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetReferenceId",
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom7819",
+        "InputFieldName": "%vlocity_namespace%__RootItemId__c",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderItem:Id",
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom4948",
+        "InputFieldName": "%vlocity_namespace%__SourceOrderItemId__c",
+        "InputObjectName": "%vlocity_namespace%__FulfilmentRequestLineDecompRelationship__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderItem:Decomp",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'$Vlocity.TRUE'",
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom2369",
+        "InputFieldName": "%vlocity_namespace%__ProductId__r.Is_Required_for_Customer_360__c",
+        "InputObjectName": "%vlocity_namespace%__InventoryItem__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderItem:Decomp:%vlocity_namespace%__DestinationFulfilmentRequestLineId__r.%vlocity_namespace%__InventoryItemId__c",
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom392",
+        "InputFieldName": "Id",
+        "InputObjectName": "%vlocity_namespace%__InventoryItem__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderItem:Decomp:InventoryItem:Id",
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom1098",
+        "InputFieldName": "%vlocity_namespace%__DestinationInventoryItemId__c",
+        "InputObjectName": "%vlocity_namespace%__InventoryItemDecompositionRelationship__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:Decomp",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FORMATDATETIME(OrderItem:Decomp:InventoryItem:%vlocity_namespace%__ActivationDate__c, \"dd/MM/yyyy\")",
+        "FormulaResultPath": "OrderItem:Decomp:InventoryItem:ActivationDate",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom7767",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUBSTRING(SUBSTRING(OrderItem:Decomp:InventoryItem:%vlocity_namespace%__LineNumber__c,\".\"),1)",
+        "FormulaResultPath": "OrderItem:Decomp:InventoryItem:LineNumberFormated",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom7606",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom7665",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom7545",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:Decomp:%vlocity_namespace%__SourceAssetId__r.%vlocity_namespace%__AssetReferenceId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:%vlocity_namespace%__AssetReferenceId__c:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom8926",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:ActivationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:ActivationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom4384",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:Decomp:%vlocity_namespace%__SourceAssetId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:AssetId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom2241",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:Decomp:%vlocity_namespace%__SourceAssetId__r.Product2.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:AssetName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom2820",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:Decomp:%vlocity_namespace%__SourceAssetId__r.%vlocity_namespace%__AssetReferenceId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:AssetReferenceId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom7451",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:Id",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom5467",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:Id:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom1888",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:%vlocity_namespace%__ProductId__r.Is_Required_for_Customer_360__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:IsVisible",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom8972",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:ItemId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom9688",
+        "InputFieldName": "OrderItem:%vlocity_namespace%__ItemName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:ItemName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom7264",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:%vlocity_namespace%__LineNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:LineNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom1618",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:LineNumberFormated",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:LineNumberFormated",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom3519",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:%vlocity_namespace%__ProductId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "InventoryItem",
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom975",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:ObjectType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRE_GetAllAssetInventoryItemsCustom7094",
+        "InputFieldName": "OrderItem:Decomp:InventoryItem:Decomp:%vlocity_namespace%__SourceAssetId__r.Product2.Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRE_GetAllAssetInventoryItems",
+        "OmniDataTransformationId": {
+            "Name": "DRE_GetAllAssetInventoryItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRE_GetAllAssetInventoryItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderItem:Decomp:InventoryItem:description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

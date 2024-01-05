@@ -1,0 +1,60 @@
+{
+    "AuthorName": "Vlocity",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 13,
+                "name": "Parent.hideAddToCartButton",
+                "val": "true"
+            },
+            {
+                "id": 9,
+                "name": "Parent.accountId",
+                "val": "0015g00000EyHr5AAF"
+            },
+            {
+                "id": 10,
+                "name": "Parent.cartId",
+                "val": "0015g00000EyHr5AAF"
+            },
+            {
+                "id": 11,
+                "name": "Parent.id",
+                "val": "a3T5g000000PKWUEA4"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "ApexRemote",
+        "value": {
+            "dsDelay": "",
+            "inputMap": {
+                "accountId": "{Parent.accountId}",
+                "cartId": "{Parent.cartId}",
+                "id": "{Parent.id}"
+            },
+            "remoteClass": "CpqAppHandler",
+            "remoteMethod": "getAppliedPromotionsByAccount",
+            "resultVar": "[\"records\"]",
+            "vlocityAsync": false
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "cpqPromotionDetailViewForAssetViewer",
+    "Namespace": "",
+    "OmniUiCardKey": "cpqPromotionDetailViewForAssetViewer/Vlocity/1/1622630227517",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "cpqPromotionDetailViewForAssetViewer.json",
+    "SampleDataSourceResponse": "{\"totalSize\":1,\"records\":[{\"displaySequence\":-1,\"Id\":{\"value\":\"a2H5g000000x73UEAQ\",\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Record ID\",\"hidden\":true,\"fieldName\":\"Id\",\"editable\":false,\"dataType\":\"ID\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__BillingAccountId__c\":{\"value\":\"0015g00000EyHr5AAF\",\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Account\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__BillingAccountId__c\",\"editable\":true,\"dataType\":\"REFERENCE\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__PromotionId__c\":{\"value\":\"a3T5g000000PKWUEA4\",\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Promotion\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__PromotionId__c\",\"editable\":true,\"dataType\":\"REFERENCE\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__Sequence__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Sequence\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__Sequence__c\",\"editable\":true,\"dataType\":\"DOUBLE\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__CancellationDate__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Cancellation Date\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__CancellationDate__c\",\"editable\":true,\"dataType\":\"DATETIME\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__CommitmentStartDate__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Commitment Start Date\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__CommitmentStartDate__c\",\"editable\":true,\"dataType\":\"DATETIME\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__AppliesTo__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Applies To\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__AppliesTo__c\",\"editable\":true,\"dataType\":\"PICKLIST\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__CancellationStatus__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Cancellation Status\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__CancellationStatus__c\",\"editable\":true,\"dataType\":\"PICKLIST\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__ReasonForCancellation__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Reason for Cancellation\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__ReasonForCancellation__c\",\"editable\":true,\"dataType\":\"STRING\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__CommitmentEndDate__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Commitment End Date\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__CommitmentEndDate__c\",\"editable\":true,\"dataType\":\"DATETIME\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__PricingStartDate__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Benefit Start Date\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__PricingStartDate__c\",\"editable\":true,\"dataType\":\"DATETIME\",\"alternateValues\":null,\"actions\":{}},\"%vlocity_namespace%__PricingEndDate__c\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Benefit End Date\",\"hidden\":true,\"fieldName\":\"%vlocity_namespace%__PricingEndDate__c\",\"editable\":true,\"dataType\":\"DATETIME\",\"alternateValues\":null,\"actions\":{}},\"name\":\"new test promo\",\"Description\":{\"value\":null,\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Description\",\"hidden\":null,\"fieldName\":\"Description\",\"editable\":true,\"dataType\":\"string\",\"alternateValues\":null,\"actions\":{}},\"Name\":{\"value\":\"new test promo\",\"previousValue\":null,\"originalValue\":null,\"messages\":[],\"label\":\"Name\",\"hidden\":true,\"fieldName\":\"Name\",\"editable\":true,\"dataType\":\"string\",\"alternateValues\":null,\"actions\":{}}}]}",
+    "StylingConfiguration": "{\"customStyles\":\"\\n.cpq__promotiondetailview-modal-header{\\n    background-color: #1589EE;\\n    border-radius: 4px 4px 0px 0px;\\n}\\n.cpq__promotiondetailview-modal-header-promotionheading{\\n    font-family: Salesforce Sans;\\n    font-size: 20px;\\n    line-height: 30px;\\n    letter-spacing: 2px;\\n    color: #FFFFFF;\\n}\\n.cpq__promotiondetailview-modal-body{\\n    height: 300px;\\n}\\n.cpq__promotiondetailview-modal-body-promotion-namecode{\\n    font-family: Salesforce Sans;\\n    font-size: 16px;\\n    line-height: 19px;\\n    color: #000000;\\n}\\n.cpq__promotiondetailview-modal-body-promotion-description{\\n    font-family: Salesforce Sans;\\n    font-size: 13px;\\n    line-height: 15px;\\n    color: #706E6B;\\n}\\n.cpq__promotiondetailview-modal-body-promotion-dates-label{\\n    width: fit-content;\\n    font-family: Salesforce Sans;\\n    font-size: 13px;\\n    line-height: 15px;\\n    color: #000000;\\n}\\n.cpq__promotiondetailview-modal-body-promotion-dates{\\n    font-family: Salesforce Sans;\\n    font-size: 13px;\\n    line-height: 15px;\\n    color: #000000;\\n}\\n.cpq__promotiondetailview-modal-body-promotion-code-label{\\n    font-family: Salesforce Sans;\\n    font-size: 12px;\\n    line-height: 14px;\\n    color: #706E6B;\\n}\\n.cpq__promotiondetailview-modal-footer-button-block\\n{\\nwidth: fit-content;\\nmargin-left: auto;\\n\\n}\\n.cpq__promotiondetailview-modal-footer-buttons{\\n width: fit-content;   \\n}\\n.cpq__promotiondetailview-cancelbuttom-tempchange{\\n display: none;   \\n}\"}",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/cpqPromotionDetailViewForAssetViewer"
+}

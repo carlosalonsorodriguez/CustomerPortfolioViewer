@@ -1,0 +1,247 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "[\n              {\n                \"userValue\": \"Mainland\",\n                \"categoryCode\": \"ACAT_TAXATION_ATTRIBUTES\",\n                \"categoryName\": \"Taxation Attributes\",\n                \"cloneable\": true,\n                \"code\": \"ATT_TAX_REGION\",\n                \"defaultValue\": \"Mainland\",\n                \"disabled\": false,\n                \"displaySequence\": 3010,\n                \"filterable\": false,\n                \"hasRules\": false,\n                \"hidden\": false,\n                \"isNotTranslatable\": false,\n                \"label\": \"Tax Region\",\n                \"multiselect\": false,\n                \"readonly\": false,\n                \"required\": false,\n                \"values\": [\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 5,\n                    \"label\": \"Other\",\n                    \"value\": \"Other\"\n                  },\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 4,\n                    \"label\": \"EU\",\n                    \"value\": \"EU\"\n                  },\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 3,\n                    \"label\": \"Azores\",\n                    \"value\": \"Azores\"\n                  },\n                  {\n                    \"defaultSelected\": true,\n                    \"displaySequence\": 1,\n                    \"label\": \"Mainland\",\n                    \"value\": \"Mainland\"\n                  },\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 2,\n                    \"label\": \"Madeira\",\n                    \"value\": \"Madeira\"\n                  }\n                ],\n                \"valueType\": \"picklist\"\n              },\n              {\n                \"userValue\": \"Standard\",\n                \"categoryCode\": \"ACAT_TAXATION_ATTRIBUTES\",\n                \"categoryName\": \"Taxation Attributes\",\n                \"cloneable\": true,\n                \"code\": \"ATT_TAX_CATEGORY\",\n                \"defaultValue\": \"Standard\",\n                \"disabled\": false,\n                \"displaySequence\": 3000,\n                \"filterable\": false,\n                \"hasRules\": false,\n                \"hidden\": false,\n                \"isNotTranslatable\": false,\n                \"label\": \"Tax Category\",\n                \"multiselect\": false,\n                \"readonly\": false,\n                \"required\": false,\n                \"values\": [\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 4,\n                    \"label\": \"Exempt\",\n                    \"value\": \"Exempt\"\n                  },\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 2,\n                    \"label\": \"Intermediate\",\n                    \"value\": \"Intermediate\"\n                  },\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 3,\n                    \"label\": \"Reduced\",\n                    \"value\": \"Reduced\"\n                  },\n                  {\n                    \"defaultSelected\": true,\n                    \"displaySequence\": 1,\n                    \"label\": \"Standard\",\n                    \"value\": \"Standard\"\n                  }\n                ],\n                \"valueType\": \"picklist\"\n              },\n              {\n                \"userValue\": \"MicroSim\",\n                \"categoryCode\": \"ACAT_GENERIC_ATTRIBUTES\",\n                \"categoryName\": \"GENERIC ATTRIBUTES\",\n                \"cloneable\": true,\n                \"code\": \"ATT_SIM_CARD_TYPE\",\n                \"defaultValue\": null,\n                \"disabled\": false,\n                \"displaySequence\": 40,\n                \"filterable\": false,\n                \"hasRules\": false,\n                \"hidden\": false,\n                \"isNotTranslatable\": false,\n                \"label\": \"SIM Card Type\",\n                \"multiselect\": false,\n                \"readonly\": false,\n                \"required\": false,\n                \"values\": [\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 1,\n                    \"label\": \"Standard SIM\",\n                    \"value\": \"Standard SIM\"\n                  },\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 4,\n                    \"label\": \"NanoSim\",\n                    \"value\": \"NanoSim\"\n                  },\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 2,\n                    \"label\": \"MicroSim\",\n                    \"value\": \"MicroSim\"\n                  },\n                  {\n                    \"defaultSelected\": false,\n                    \"displaySequence\": 3,\n                    \"label\": \"e-SIM\",\n                    \"value\": \"e-SIM\"\n                  }\n                ],\n                \"valueType\": \"picklist\"\n              }\n            ]",
+            "dsDelay": "",
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfCpqItemAttributeViewer_5_Vlocity",
+        "Id": "0Rb7a000001NpmpCAC",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfCpqItemAttributeViewer_5_Vlocity",
+        "NamespacePrefix": "c"
+    },
+    "selectableMode": "Multi",
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "flexDatatable",
+                            "elementLabel": "Datatable-1",
+                            "name": "Datatable",
+                            "property": {
+                                "card": "{card}",
+                                "cellLevelEdit": true,
+                                "columns": [
+                                    {
+                                        "editable": "false",
+                                        "fieldName": "label",
+                                        "label": "Attribute Name",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "editable": "false",
+                                        "fieldName": "userValue",
+                                        "label": "Value",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "editable": "false",
+                                        "fieldName": "code",
+                                        "label": "Code",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "editable": "false",
+                                        "fieldName": "categoryName",
+                                        "label": "Category",
+                                        "searchable": "false",
+                                        "sortable": true,
+                                        "type": "text"
+                                    }
+                                ],
+                                "groupOrder": "asc",
+                                "issearchavailable": false,
+                                "issortavailable": true,
+                                "pagelimit": 3,
+                                "record": "{record}",
+                                "records": "{records}",
+                                "styles": {
+                                    "cellMargin": [
+                                    ],
+                                    "cellPadding": [
+                                    ],
+                                    "headFontWeight": "bold"
+                                }
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "class": "",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                    "styles": {
+                                        "cellMargin": [
+                                        ],
+                                        "cellPadding": [
+                                        ],
+                                        "headFontWeight": "bold"
+                                    }
+                                },
+                                "inlineStyle": "font-size:8pt",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "      \n         font-size:8pt",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": "",
+                                            "width": ""
+                                        },
+                                        "class": "",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                            "styles": {
+                                                "cellMargin": [
+                                                ],
+                                                "cellPadding": [
+                                                ],
+                                                "headFontWeight": "bold"
+                                            }
+                                        },
+                                        "inlineStyle": "font-size:8pt",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "      \n         font-size:8pt",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "element"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "class": "slds-card slds-p-around_x-small slds-m-bottom_x-small",
+                "container": {
+                    "class": "slds-card"
+                },
+                "margin": [
+                    {
+                        "size": "none",
+                        "type": "around"
+                    }
+                ],
+                "padding": [
+                    {
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12"
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "cpqItemAttributeViewer"
+}

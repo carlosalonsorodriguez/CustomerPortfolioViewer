@@ -1,0 +1,18 @@
+.cpq__cart-line-item_promo{
+     background-color: rgb(216, 237, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(94, 180, 255);
+    flex: 1 1 auto;
+}
+.cpq__cart-item-border_container{
+    height:0;
+    flex: 1 1 auto;
+}
+.cpq__cart-line-item-promo_name{
+    padding-left:1%;
+    flex: 1 1 auto;
+}
+.cpq__cart-item-bottom_border{
+    padding-left:0;
+}

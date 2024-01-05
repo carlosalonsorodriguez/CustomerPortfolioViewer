@@ -1,0 +1,55 @@
+{
+    "AuthorName": "Vlocity",
+    "ClonedFromOmniUiCardKey": "cpqAssetViewerContainer/Vlocity/4/1675267236433",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 24,
+                    "name": "Session.searchBy",
+                    "val": "Name"
+                },
+                {
+                    "id": 25,
+                    "name": "Session.query",
+                    "val": "t"
+                },
+                {
+                    "id": 60,
+                    "name": "recordId",
+                    "val": "0017a000023sB1QAAU"
+                },
+                {
+                    "id": 20,
+                    "name": "Session.pageSize",
+                    "val": "5"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "{}",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "cpqAssetAndInventoryViewerContainer",
+    "Namespace": "",
+    "OmniUiCardKey": "cpqAssetAndInventoryViewerContainer/Vlocity/12/1699369465866",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "cpqAssetAndInventoryViewerContainer.json",
+    "SampleDataSourceResponse": "{}",
+    "StylingConfiguration": "{\"customStyles\":\"\\n.select-an-action .slds-modal__container {\\n    text-align: left;\\n    width: 50%; \\n}\\n.select-an-action .slds-modal__content, .slds-p-around_medium {\\n    text-align: left;\\n}\\n.select-an-action .slds-dropdown__list {\\n    text-align: left !important;\\n}\\n.asset-viewer-search  .%vlocity_namespace%-modal_modal_slds {\\n    width: 50%;\\n}\\n\\n.cpq__asset-viewer_header-right {\\n    width: auto;\\n    margin-left: auto;\\n    margin-right: 0;\\n}\\n.cpq__asset-viewer_viewby-text, .cpq__asset-viewer_search-button,\\n.cpq__asset-viewer_action-button {\\n    width: auto;\\n}\\n.cpq__asset-viewer_search {\\n    min-width: 20rem;\\n    text-align: left;\\n}\\n\\n@media only screen and (max-width: 768px) {\\n    .cpq__asset-viewer_header-right, .cpq__asset-viewer_viewby-text,\\n    .cpq__asset-viewer_search-button, .cpq__asset-viewer_action-button {\\n        width: fit-content;\\n    }\\n    .cpq__asset-viewer_search {\\n        min-width: fit-content;\\n    }\\n}\"}",
+    "UniqueName": "",
+    "VersionNumber": 12,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/cpqAssetAndInventoryViewerContainer"
+}
