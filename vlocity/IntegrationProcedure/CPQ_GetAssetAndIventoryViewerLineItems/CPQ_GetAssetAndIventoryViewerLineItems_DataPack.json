@@ -19,7 +19,6 @@
     "OmniProcessKey": "CPQ_GetAssetAndIventoryViewerLineItems",
     "OmniProcessType": "Integration Procedure",
     "PropertySetConfig": "CPQ_GetAssetAndIventoryViewerLineItems_PropertySetConfig.json",
-    "ResponseCacheType": "Session Cache",
     "SubType": "GetAssetAndIventoryViewerLineItems",
     "Type": "CPQ",
     "VlocityDataPackType": "SObject",
